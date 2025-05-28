@@ -19,3 +19,13 @@ body {
     text-decoration: none;
 }
 
+.section-block {
+    display: none;
+}
+
+button {
+    padding: 8px 18px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 6px;
+}

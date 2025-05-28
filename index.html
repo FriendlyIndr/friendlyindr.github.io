@@ -34,7 +34,15 @@
             </div>
         </div>
     </div>
-    <div class="projects" style="margin-top: 20px;">
+
+    <div class="nav-buttons" style="text-align: center; margin-top: 20px;">
+        <button onclick="showSection('projects')" id="projects-section-btn">Projects</button>
+        <button onclick="showSection('skills')" id="skills-section-btn">Skills</button>
+        <button onclick="showSection('education')" id="education-section-btn">Education</button>
+        <button onclick="showSection('contact')" id="contact-section-btn">Contact</button>
+    </div>
+
+    <div class="projects section-block" style="margin-top: 20px;">
         <h2 style="text-align: center;">Projects</h2>
         <div class="projects-list" style="text-align: center;">
             <div class="project-card">
@@ -46,8 +54,9 @@
                 <a href="https://github.com/FriendlyIndr/ResumeBuilder" target="_blank" class="button-link">GitHub</a>
                 <a href="https://resume-builder-one-omega.vercel.app/" target="_blank" class="button-link">Demo</a>
             </div>
+        </div>
     </div>
-    <div class="skills" style="margin-top: 20px;">
+    <div class="skills section-block" style="margin-top: 20px;">
         <h2 style="text-align: center;">Skills</h2>
         <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
             <span>JavaScript</span>
@@ -57,15 +66,17 @@
             <span>HTML &amp; CSS</span>
         </div>
     </div>
-    <div class="education" style="margin-top: 20px;">
+    <div class="education section-block" style="margin-top: 20px;">
         <h2 style="text-align: center;">Education</h2>
         <p style="text-align: center;">Bachelor of Technology in Electronics and Telecommunications Engineering</p>
         <p style="text-align: center;">Vishwakarma Institute of Information Technology, 2026</p>
     </div>
-    <div class="contact" style="text-align: center;">
+    <div class="contact section-block" style="text-align: center;">
         <h2>Contact</h2>
         <a href="mailto:abhyudaya.tiwari003@gmail.com" class="button-link">Email</a>
     </div>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
