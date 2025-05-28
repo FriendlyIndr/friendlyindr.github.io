@@ -3,6 +3,13 @@ body {
     color: #fff;
 }
 
+.profile-pic {
+    max-width:150px;
+    max-height:150px; 
+    padding: 5px;
+    border-radius: 50%;
+}
+
 .button-link {
     display: inline-block;
     padding: 8px 18px;
@@ -11,3 +18,4 @@ body {
     border-radius: 6px;
     text-decoration: none;
 }
+
