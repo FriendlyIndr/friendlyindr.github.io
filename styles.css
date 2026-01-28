@@ -101,3 +101,17 @@ button {
         font-size: 10px;
     }
 }
+
+@media all and (max-width: 480px) {
+    html, body {
+        font-size: 8px;
+    }
+    .desc {
+        font-size: 1.75rem;
+        padding: 0 0 0 22rem;
+        margin: 1.5rem 0;
+    }
+    .nav-buttons button {
+        font-size: 1.4rem;
+    }
+}
