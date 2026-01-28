@@ -49,6 +49,11 @@ main.container {
 
 .nav-buttons button {
     border-radius: 50px;
+    font-family: 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0.25rem;
+    font-size: 0.9rem;
 }
 
 .button-link {
