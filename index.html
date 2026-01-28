@@ -10,73 +10,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body style="font-family: 'Roboto', Arial, sans-serif;">
-    <div class="upper-block" style="display: flex; align-items: center; justify-content: center;">
-        <img src="image.png" alt="Profile Picture" class="profile-pic">
-        <div class="upper-right-section">
-            <h1>Abhyudaya Tiwari</h1>
-            <h2>Software Engineer</h2>
-            <div class="socials" style="margin-top: 10px; text-align: right;">
-                <a href="https://www.linkedin.com/in/abhyudaya-tiwari/" target="_blank" rel="noopener noreferrer" title="LinkedIn" style="margin-right: 10px;">
-                    <img src="icons/LinkedIn_icon.svg" 
-                    alt="LinkedIn" 
-                    style="width:24px; height:24px; vertical-align:middle; margin-right:4px;">
-                </a>
-                <a href="https://github.com/FriendlyIndr" target="_blank" rel="noopener noreferrer" title="GitHub" style="margin-right: 10px;">
-                    <img src="icons/github.svg" 
-                    alt="GitHub" 
-                    style="width:24px; height:24px; vertical-align:middle; margin-right:4px;">
-                </a>
-                <a href="https://tealrust.hashnode.dev/" target="_blank" rel="noopener noreferrer" title="Blog">
-                    <img src="icons/hashnode.svg" 
-                    alt="Hashnode" 
-                    style="width:24px; height:24px; vertical-align:middle; margin-right:4px;">
-                </a>
+    <main class="container">
+        <div class="upper-block">
+            <div id="profile" src="image.png" alt="profile photo"></div>
+            <h1 class="name">Abhyudaya Tiwari</h1>
+            <p class="desc">Software Engineer</p>
+            <div class="upper-right-section">
+                <div class="socials" style="margin-top: 10px; text-align: right;">
+                    <a href="https://www.linkedin.com/in/abhyudaya-tiwari/" target="_blank" rel="noopener noreferrer" title="LinkedIn" style="margin-right: 10px;">
+                        <img src="icons/LinkedIn_icon.svg" 
+                        alt="LinkedIn" 
+                        style="width:24px; height:24px; vertical-align:middle; margin-right:4px;">
+                    </a>
+                    <a href="https://github.com/FriendlyIndr" target="_blank" rel="noopener noreferrer" title="GitHub" style="margin-right: 10px;">
+                        <img src="icons/github.svg" 
+                        alt="GitHub" 
+                        style="width:24px; height:24px; vertical-align:middle; margin-right:4px;">
+                    </a>
+                    <a href="https://tealrust.hashnode.dev/" target="_blank" rel="noopener noreferrer" title="Blog">
+                        <img src="icons/hashnode.svg" 
+                        alt="Hashnode" 
+                        style="width:24px; height:24px; vertical-align:middle; margin-right:4px;">
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="nav-buttons" style="text-align: center; margin-top: 20px;">
-        <button onclick="showSection('projects')" id="projects-section-btn">Projects</button>
-        <button onclick="showSection('skills')" id="skills-section-btn">Skills</button>
-        <button onclick="showSection('education')" id="education-section-btn">Education</button>
-        <button onclick="showSection('contact')" id="contact-section-btn">Contact</button>
-    </div>
+        <div class="nav-buttons" style="text-align: center; margin-top: 20px;">
+            <button onclick="showSection('projects')" id="projects-section-btn">Projects</button>
+            <button onclick="showSection('skills')" id="skills-section-btn">Skills</button>
+            <button onclick="showSection('education')" id="education-section-btn">Education</button>
+            <button onclick="showSection('contact')" id="contact-section-btn">Contact</button>
+        </div>
 
-    <div class="projects section-block" style="margin-top: 20px;">
-        <h2 style="text-align: center;">Projects</h2>
-        <div class="projects-list" style="text-align: center;">
-            <div class="project-card">
-                <a href="https://resume-builder-one-omega.vercel.app/" target="_blank" style="text-decoration: none;">
-                    <h3>Resume Builder</h3>
-                </a>
-                <p>Tech Stack: JavaScript, Java, Spring Boot</p>
-                <p>Resume Builder enables users to generate a PDF resume with the help of simple inputs. The only thing users have to do is insert their info and the app does the rest for them.</p>
-                <a href="https://github.com/FriendlyIndr/ResumeBuilder" target="_blank" class="button-link">GitHub</a>
-                <a href="https://resume-builder-one-omega.vercel.app/" target="_blank" class="button-link">Demo</a>
+        <div class="projects section-block" style="margin-top: 20px;">
+            <h2 style="text-align: center;">Projects</h2>
+            <div class="projects-list" style="text-align: center;">
+                <div class="project-card">
+                    <a href="https://resume-builder-one-omega.vercel.app/" target="_blank" style="text-decoration: none;">
+                        <h3>Resume Builder</h3>
+                    </a>
+                    <p>Tech Stack: JavaScript, Java, Spring Boot</p>
+                    <p>Resume Builder enables users to generate a PDF resume with the help of simple inputs. The only thing users have to do is insert their info and the app does the rest for them.</p>
+                    <a href="https://github.com/FriendlyIndr/ResumeBuilder" target="_blank" class="button-link">GitHub</a>
+                    <a href="https://resume-builder-one-omega.vercel.app/" target="_blank" class="button-link">Demo</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="skills section-block" style="margin-top: 20px;">
-        <h2 style="text-align: center;">Skills</h2>
-        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>Spring Boot</span>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>HTML &amp; CSS</span>
+        <div class="skills section-block" style="margin-top: 20px;">
+            <h2 style="text-align: center;">Skills</h2>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>HTML &amp; CSS</span>
+            </div>
         </div>
-    </div>
-    <div class="education section-block" style="margin-top: 20px;">
-        <h2 style="text-align: center;">Education</h2>
-        <p style="text-align: center;">Bachelor of Technology in Electronics and Telecommunications Engineering</p>
-        <p style="text-align: center;">Vishwakarma Institute of Information Technology, 2026</p>
-    </div>
-    <div class="contact section-block" style="text-align: center;">
-        <h2>Contact</h2>
-        <a href="mailto:abhyudaya.tiwari003@gmail.com" class="button-link">Email</a>
-    </div>
+        <div class="education section-block" style="margin-top: 20px;">
+            <h2 style="text-align: center;">Education</h2>
+            <p style="text-align: center;">Bachelor of Technology in Electronics and Telecommunications Engineering</p>
+            <p style="text-align: center;">Vishwakarma Institute of Information Technology, 2026</p>
+        </div>
+        <div class="contact section-block" style="text-align: center;">
+            <h2>Contact</h2>
+            <a href="mailto:abhyudaya.tiwari003@gmail.com" class="button-link">Email</a>
+        </div>
+    </main>
     
     <script src="script.js"></script>
 
