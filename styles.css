@@ -106,6 +106,9 @@ button {
     html, body {
         font-size: 10px;
     }
+    .nav-buttons button {
+        font-size: 1.4rem;
+    }
 }
 
 @media all and (max-width: 600px) {
