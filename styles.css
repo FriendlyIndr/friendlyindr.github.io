@@ -19,7 +19,7 @@ main.container {
 
 #profile {
     margin: auto;
-    background-image: url(image.png);
+    background-image: url(image.jpeg);
     width:250px;
     height:250px;
     background-size: cover;
@@ -52,7 +52,7 @@ main.container {
 .socials {
     display: flex;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8rem;
 }
 
 .socials a {
@@ -101,6 +101,22 @@ button {
 @media all and (max-width: 740px) {
     html, body {
         font-size: 10px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    html, body {
+        font-size: 9px;
+    }
+    #profile {
+        width: 200px;
+        height: 200px;
+    }
+    .nav-buttons button {
+        font-size: 1.4rem;
+    }
+    .section-block {
+        font-size: 1.6rem;
     }
 }
 
