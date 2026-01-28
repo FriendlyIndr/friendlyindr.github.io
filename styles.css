@@ -52,6 +52,7 @@ main.container {
 .socials {
     display: flex;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .socials a {
@@ -85,6 +86,7 @@ main.container {
 
 .section-block {
     display: none;
+    margin-top: 20px;
 }
 
 button {
@@ -113,5 +115,8 @@ button {
     }
     .nav-buttons button {
         font-size: 1.4rem;
+    }
+    .section-block {
+        font-size: 1.6rem;
     }
 }
