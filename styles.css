@@ -115,8 +115,15 @@ button {
     }
     .nav-buttons button {
         font-size: 1.4rem;
+        padding: 1.1rem 1.1rem;
     }
     .section-block {
         font-size: 1.6rem;
+    }
+}
+
+@media all and (max-width: 344px) {
+    .desc {
+        padding: 0 0 0 20rem;
     }
 }
