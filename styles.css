@@ -4,6 +4,10 @@
     color-scheme: light;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     font-size: 16px;
     background-color: #f9f9f9;
@@ -19,6 +23,7 @@ main.container {
 
 .upper-block {
     padding-top: 1rem;
+    margin-top: 8rem;
 }
 
 #profile {
@@ -53,10 +58,25 @@ main.container {
     padding: 0 0 0 30rem;
 }
 
+.navbar {
+    /* The core sticky logic */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: #f9f9f9;
+    display: flex;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    width: 75%;
+}
+
 .socials {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 8rem;
+    align-items: center;
 }
 
 .socials a {
@@ -70,7 +90,7 @@ main.container {
     display: block;
 }
 
-.nav-buttons button {
+.nav-buttons a {
     border-radius: 50px;
     font-family: 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 300;
@@ -89,16 +109,16 @@ main.container {
 }
 
 .section-block {
-    display: none;
     margin-top: 20px;
 }
 
-button {
+a {
     padding: 8px 18px;
     background-color: transparent;
     color: #000;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #projects-list > * + * {

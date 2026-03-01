@@ -12,7 +12,14 @@
 </head>
 <body style="font-family: 'Roboto', Arial, sans-serif;">
     <main class="container">
-        <div class="upper-block">
+        <div class="navbar">
+            <div class="nav-buttons" style="text-align: center;">
+                <a href="#projects" id="projects-section-btn">Projects</a>
+                <a href="#skills" id="skills-section-btn">Skills</a>
+                <a href="#education" id="education-section-btn">Education</a>
+                <a href="#contact" id="contact-section-btn">Contact</a>
+            </div>
+
             <div class="socials">
                 <a href="https://www.linkedin.com/in/abhyudaya-tiwari/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                     <img src="icons/LinkedIn_icon.svg" alt="LinkedIn" >
@@ -24,24 +31,20 @@
                     <img src="icons/hashnode.svg" alt="Hashnode" >
                 </a>
             </div>
+        </div>
+
+        <div class="upper-block">
             <div id="profile" src="image.jpeg" alt="profile photo"></div>
             <h1 class="name">Abhyudaya Tiwari</h1>
             <p class="desc">Software Engineer</p>
         </div>
 
-        <div class="nav-buttons" style="text-align: center; margin-top: 20px;">
-            <button id="projects-section-btn">Projects</button>
-            <button id="skills-section-btn">Skills</button>
-            <button id="education-section-btn">Education</button>
-            <button id="contact-section-btn">Contact</button>
-        </div>
-
-        <div class="projects section-block">
+        <div id="projects" class="projects section-block">
             <h2 style="text-align: center;">Projects</h2>
             <div id="projects-list" style="text-align: center;">
             </div>
         </div>
-        <div class="skills section-block">
+        <div id="skills" class="skills section-block">
             <h2 style="text-align: center;">Skills</h2>
             <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
                 <span>JavaScript</span>
@@ -53,12 +56,12 @@
                 <span>HTML &amp; CSS</span>
             </div>
         </div>
-        <div class="education section-block">
+        <div id="education" class="education section-block">
             <h2 style="text-align: center;">Education</h2>
             <p style="text-align: center;">Bachelor of Technology in Electronics and Telecommunications Engineering</p>
             <p style="text-align: center;">Vishwakarma Institute of Information Technology, 2026</p>
         </div>
-        <div class="contact section-block" style="text-align: center;">
+        <div id="contact" class="contact section-block" style="text-align: center;">
             <h2>Contact</h2>
             <a href="mailto:abhyudaya.tiwari003@gmail.com" class="button-link">Email</a>
         </div>
