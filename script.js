@@ -1,3 +1,5 @@
+import { projects } from "./projects.js";
+
 function showSection(sectionClass) {
     const buttons = document.querySelectorAll('button');
     buttons.forEach(button => {
@@ -19,22 +21,6 @@ function showSection(sectionClass) {
     });
 }
 
-const projects = [
-    {
-        name: 'Resume Builder',
-        link: 'https://resume-builder-one-omega.vercel.app/',
-        gitHub: 'https://github.com/FriendlyIndr/ResumeBuilder',
-        techStack: 'JavaScript, Java, Spring Boot',
-        description: 'Resume Builder enables users to generate a PDF resume with the help of simple inputs. The only thing users have to do is insert their info and the app does the rest for them.',
-    },
-    {
-        name: 'Mas',
-        gitHub: 'https://github.com/FriendlyIndr/Mas',
-        techStack: 'JavaScript, React, Express, Node, PostgreSQL, Sequelize, Zod',
-        description: 'A simple weekly planner.',
-    }
-];
-
 function showProjects() {
     const projectsList = document.getElementById('projects-list');
 
@@ -53,6 +39,11 @@ function showProjects() {
 
         projectsList.appendChild(projectDiv);
     }
+}
+
+for(const section of ['projects', 'skills', 'education', 'contact']) {
+    document.getElementById(`${section}-section-btn`)
+        .addEventListener('click', () => showSection(`${section}`));
 }
 
 showSection('projects');
