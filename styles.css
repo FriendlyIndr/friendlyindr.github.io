@@ -101,6 +101,27 @@ button {
     cursor: pointer;
 }
 
+#projects-list > * + * {
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: #c2e8f0;
+    box-shadow: 5px 5px 10px #b2b9bb;
+    background-image: linear-gradient(to right, #c2e8f0, #8dd6e4, #4cc9e2);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    font-size: x-large;
+    color: #283541;
+}
+
 /* Responsiveness */
 @media all and (max-width: 740px) {
     html, body {
