@@ -138,7 +138,7 @@ a {
 
 .project-card {
     background-color: #c2e8f0;
-    box-shadow: 5px 5px 10px #b2b9bb;
+    box-shadow: 5px 5px 10px #ccc;
     background-image: linear-gradient(to right, #c2e8f0, #8dd6e4, #4cc9e2);
     border-radius: 1rem;
     padding: 2rem;
@@ -198,6 +198,8 @@ a {
         border-radius: 1rem;
         width: 70%;
         left: 1rem;
+        border: 1px solid black;
+        box-shadow: 5px 5px 15px #ccc;
     }
     .nav-buttons.open {
         display: flex;
