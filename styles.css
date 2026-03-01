@@ -90,6 +90,17 @@ main.container {
     display: block;
 }
 
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
 .nav-buttons a {
     border-radius: 50px;
     font-family: 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -177,7 +188,21 @@ a {
         padding: 0 0 0 22rem;
         margin: 1.5rem 0;
     }
-    .nav-buttons button {
+    .nav-buttons {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        top: 7rem;
+        background-color: #f9f9f9;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 70%;
+        left: 1rem;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .nav-buttons a {
         font-size: 1.4rem;
         padding: 1.1rem 1.1rem;
     }
