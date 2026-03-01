@@ -20,13 +20,15 @@ function showProjects() {
         const projectDiv = document.createElement('div');
         projectDiv.className = 'project-card';
         projectDiv.innerHTML = `
-            <a href=${project.link ? project.link : project.gitHub} target="_blank" style="text-decoration: none;">
-                <h3>${project.name}</h3>
-            </a>
-            <p>Tech Stack: ${project.techStack}</p>
-            <p>${project.description}</p>
-            <a href=${project.gitHub} target="_blank" class="button-link">GitHub</a>
-            ${project.link ? `<a href=${project.link} target="_blank" class="button-link">Demo</a>` : ''}
+            <div class='project-content'>
+                <a href=${project.link ? project.link : project.gitHub} target="_blank" style="text-decoration: none;">
+                    <h3>${project.name}</h3>
+                </a>
+                <p>Tech Stack: ${project.techStack}</p>
+                <p>${project.description}</p>
+                <a href=${project.gitHub} target="_blank" class="button-link">GitHub</a>
+                ${project.link ? `<a href=${project.link} target="_blank" class="button-link">Demo</a>` : ''}
+            <div>
         `;
 
         projectsList.appendChild(projectDiv);

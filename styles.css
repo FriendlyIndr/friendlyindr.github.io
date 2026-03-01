@@ -139,16 +139,24 @@ a {
 .project-card {
     background-color: #c2e8f0;
     box-shadow: 5px 5px 10px #ccc;
-    background-image: linear-gradient(to right, #c2e8f0, #8dd6e4, #4cc9e2);
+    background-image: linear-gradient(to right, #c2e8f0, #76b6c3, #35abc3);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2.5rem;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.project-content {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 6px #6e6e6e;
+}
+
 .project-card h3 {
     margin-top: 0;
+    margin-bottom: 0;
     font-size: x-large;
     color: #283541;
 }
