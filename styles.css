@@ -199,6 +199,9 @@ a {
         width: 70%;
         left: 1rem;
     }
+    .nav-buttons.open {
+        display: flex;
+    }
     .mobile-menu {
         display: block;
     }

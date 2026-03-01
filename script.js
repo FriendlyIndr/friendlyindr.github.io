@@ -39,13 +39,27 @@ for(const section of ['projects', 'skills', 'education', 'contact']) {
 }
 
 document.querySelector('.mobile-menu')
-    .addEventListener('click', () => {
+    .addEventListener('click', (e) => {
         const navButtons = document.querySelector('.nav-buttons');
-        if (navButtons.style.display === 'flex') {
-            navButtons.style.display = 'none';
-        } else {
-            navButtons.style.display = 'flex';
-        }
+        navButtons.classList.toggle('open');
+        e.stopPropagation();
     });
+
+document.addEventListener('click', (e) => {
+    const navButtons = document.querySelector('.nav-buttons');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    const isMobile = window.innerWidth <= 480;
+
+    if (!isMobile) return;
+
+    if (
+        navButtons.classList.contains('open') &&
+        !navButtons.contains(e.target) &&
+        !mobileMenu.contains(e.target)
+    ) {
+        navButtons.classList.remove('open');
+    }
+});
 
 showProjects();
