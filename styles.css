@@ -164,6 +164,9 @@ button {
     .section-block {
         font-size: 1.6rem;
     }
+    .project-card {
+        width: 80%;
+    }
 }
 
 @media all and (max-width: 344px) {
