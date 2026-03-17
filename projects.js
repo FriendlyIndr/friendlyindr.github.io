@@ -7,6 +7,13 @@ export const projects = [
         description: 'A simple weekly planner.',
     },
     {
+        name: 'Wobbleboard',
+        link: 'https://wobble-board.vercel.app/',
+        gitHub: 'https://github.com/FriendlyIndr/WobbleBoard',
+        techStack: 'TypeScript, React, CSS',
+        description: 'Wobbleboard lets you create beautiful diagrams.',
+    },
+    {
         name: 'Resume Builder',
         link: 'https://resume-builder-one-omega.vercel.app/',
         gitHub: 'https://github.com/FriendlyIndr/ResumeBuilder',
