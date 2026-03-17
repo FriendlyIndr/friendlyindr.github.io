@@ -10,7 +10,7 @@ export const projects = [
         name: 'Wobbleboard',
         link: 'https://wobble-board.vercel.app/',
         gitHub: 'https://github.com/FriendlyIndr/WobbleBoard',
-        techStack: 'TypeScript, React, CSS',
+        techStack: 'TypeScript, React, Vite, CSS',
         description: 'Wobbleboard lets you create beautiful diagrams.',
     },
     {
